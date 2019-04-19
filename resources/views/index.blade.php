@@ -2,6 +2,9 @@
 
 
 
+
+
+
 @section('content')
 
     <div class="container">
@@ -50,8 +53,6 @@
             </div>
         </div>
     </div>
-
- 
 
 
     <div class="container">
