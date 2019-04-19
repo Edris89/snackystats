@@ -1,10 +1,6 @@
 @extends('layouts.default')
 
 
-
-
-
-
 @section('content')
 
     <div class="container">
@@ -64,7 +60,6 @@
                 <canvas id="last30daysChart"></canvas>
                 <canvas id="thismonthChart"></canvas>
                 <canvas id="lastmonthChart"></canvas>
-
             </div>
         </div>
     </div>
@@ -72,7 +67,6 @@
 
 
 @section("scripts")
-
 
 
 {{-- Check If Snacky is Open or Closed --}}
