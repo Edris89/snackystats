@@ -22,7 +22,7 @@ class SnackyStatsController extends Controller
         return response()->json($today);
     }
 
-    #TODO: Fix yesterday
+    
     public function getDataYesterday(){
         $yesterdayInAmsterdam = Carbon::yesterday('Europe/Amsterdam')->toDateString();
         $yesterdayData = SnackyStats::whereDate('datumpje', '=' , $yesterdayInAmsterdam)->orderByRaw('datumpje ASC')->get();
