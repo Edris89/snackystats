@@ -15,13 +15,11 @@ class SnackyStatsController extends Controller
         return View('index');
     }
 
-
     public function getDataToday(){
         $nowInAmsterdam =  Carbon::now('Europe/Amsterdam')->toDateString();
         $today = DB::table('snacky_stats')->whereDate('datumpje', '=' ,$nowInAmsterdam)->orderByRaw('datumpje ASC')->get();
         return response()->json($today);
     }
-
     
     public function getDataYesterday(){
         $yesterdayInAmsterdam = Carbon::yesterday('Europe/Amsterdam')->toDateString();
